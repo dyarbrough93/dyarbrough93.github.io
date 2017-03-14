@@ -54,12 +54,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -82,11 +76,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -217,12 +206,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -245,11 +228,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -364,12 +342,6 @@ define({ "api": [
             "optional": false,
             "field": "E_NOAUTH",
             "description": "<p>You are not authorized to perform this action.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
           }
         ],
         "Error 5xx": [
@@ -385,11 +357,6 @@ define({ "api": [
         {
           "title": "403 (E_NOAUTH):",
           "content": "HTTP/1.1 403 Forbidden\n{\n  \"code\": \"E_NOAUTH\",\n  \"message\": \"You do not have the required permissions to perform that action.\"\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -490,12 +457,6 @@ define({ "api": [
             "optional": false,
             "field": "E_VALIDATION",
             "description": "<p>A validation error was encountered when querying the database. This could result from invalid json, missing required attributes, or incorrect attribute types.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
           }
         ],
         "Error 5xx": [
@@ -516,11 +477,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -674,12 +630,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -702,11 +652,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -837,12 +782,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -865,11 +804,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -940,12 +874,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -968,11 +896,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -1089,12 +1012,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -1117,11 +1034,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -1222,12 +1134,6 @@ define({ "api": [
             "optional": false,
             "field": "E_NOAUTH",
             "description": "<p>You are not authorized to perform this action.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
           }
         ],
         "Error 5xx": [
@@ -1243,11 +1149,6 @@ define({ "api": [
         {
           "title": "403 (E_NOAUTH):",
           "content": "HTTP/1.1 403 Forbidden\n{\n  \"code\": \"E_NOAUTH\",\n  \"message\": \"You do not have the required permissions to perform that action.\"\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -1373,12 +1274,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -1401,11 +1296,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -1449,7 +1339,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success (example):",
-          "content": "HTTP/1.1 201 Created\n{\n    \"id\": 1\n}",
+          "content": "HTTP/1.1 200 OK\n{\n    \"id\": 1\n}",
           "type": "json"
         }
       ]
@@ -1497,12 +1387,6 @@ define({ "api": [
             "optional": false,
             "field": "E_VALIDATION",
             "description": "<p>A validation error was encountered when querying the database. This could result from invalid json, missing required attributes, or incorrect attribute types.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
           }
         ],
         "Error 5xx": [
@@ -1523,11 +1407,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -1653,12 +1532,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -1681,11 +1554,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -1837,12 +1705,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -1865,11 +1727,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -2021,12 +1878,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -2049,11 +1900,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -2124,12 +1970,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -2152,11 +1992,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -2294,12 +2129,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -2322,11 +2151,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -2426,7 +2250,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n[{\n  \"id:\" 1,\n  \"username\": \"jane@test.com\",\n  \"firstName\": \"Jane\",\n  \"lastName\": \"Doe\",\n  \"groups\": [{\n                 // group object  \n             }],\n  \"events\": [{\n                 // event object  \n             }],\n  \"enabled\": true,\n  \"createdAt\": \"2017-02-28T02:50:43.037Z\",\n  \"updatedAt\": \"2017-02-28T02:50:43.037Z\"\n},\n{\n  \"id:\" 2,\n  \"username\": \"john@test.com\",\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"groups\": [{\n                 // group object  \n             }],\n  \"events\": [{\n                 // event object  \n             }],\n  \"enabled\": false,\n  \"createdAt\": \"2017-02-28T17:56:03.614Z\",\n  \"updatedAt\": \"2017-02-28T17:56:03.614Z\"\n}]",
+          "content": "HTTP/1.1 200 OK\n[{\n  \"id:\" 1,\n  \"username\": \"jane@test.com\",\n  \"firstName\": \"Jane\",\n  \"lastName\": \"Doe\",\n  \"groups\": [{\n                 // group object\n             }],\n  \"events\": [{\n                 // event object\n             }],\n  \"enabled\": true,\n  \"createdAt\": \"2017-02-28T02:50:43.037Z\",\n  \"updatedAt\": \"2017-02-28T02:50:43.037Z\"\n},\n{\n  \"id:\" 2,\n  \"username\": \"john@test.com\",\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"groups\": [{\n                 // group object\n             }],\n  \"events\": [{\n                 // event object\n             }],\n  \"enabled\": false,\n  \"createdAt\": \"2017-02-28T17:56:03.614Z\",\n  \"updatedAt\": \"2017-02-28T17:56:03.614Z\"\n}]",
           "type": "json"
         }
       ]
@@ -2441,18 +2265,6 @@ define({ "api": [
             "optional": false,
             "field": "E_NOAUTH",
             "description": "<p>You are not authorized to perform this action.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "E_NOEXIST",
-            "description": "<p>The requested resource does not exist.</p>"
           }
         ],
         "Error 5xx": [
@@ -2468,16 +2280,6 @@ define({ "api": [
         {
           "title": "403 (E_NOAUTH):",
           "content": "HTTP/1.1 403 Forbidden\n{\n  \"code\": \"E_NOAUTH\",\n  \"message\": \"You do not have the required permissions to perform that action.\"\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOEXIST):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOEXIST\",\n  \"message\": \"The requested group 'Admin' does not exist.\"\n}",
           "type": "json"
         },
         {
@@ -2734,12 +2536,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -2762,11 +2558,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -2918,12 +2709,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -2946,11 +2731,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -3077,12 +2857,6 @@ define({ "api": [
             "optional": false,
             "field": "E_VALIDATION",
             "description": "<p>A validation error was encountered when querying the database. This could result from invalid json, missing required attributes, or incorrect attribute types.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
           }
         ],
         "Error 5xx": [
@@ -3103,11 +2877,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {
@@ -3296,12 +3065,6 @@ define({ "api": [
           {
             "group": "Error 4xx",
             "optional": false,
-            "field": "E_NOREG",
-            "description": "<p>App is not registered with the service. Please verify that you have specified the correct subdomain.</p>"
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
             "field": "E_NOEXIST",
             "description": "<p>The requested resource does not exist.</p>"
           }
@@ -3324,11 +3087,6 @@ define({ "api": [
         {
           "title": "400 (E_VALIDATION):",
           "content": "HTTP/1.1 400 Bad Request\n{\n    \"code\": \"E_VALIDATION\",\n    \"invalidAttributes\": {\n    \"username\": [\n        {\n        \"value\": \"test@test.com\",\n        \"rule\": \"unique\",\n        \"message\": \"A record with that `username` already exists (`test@test.com`).\"\n        }]\n    },\n    \"reason\": \"1 attribute is invalid\",\n    \"details\": \"Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n    \"message\": \"[Error (E_VALIDATION) 1 attribute is invalid] Invalid attributes sent to undefined:\\n • username\\n   • A record with that `username` already exists (`test@test.com`).\\n\",\n}",
-          "type": "json"
-        },
-        {
-          "title": "400 (E_NOREG):",
-          "content": "HTTP/1.1 400 Bad Request\n{\n  \"code\": \"E_NOREG\",\n  \"message\": \"The requested application 'test' is not registered with the service.\"\n}",
           "type": "json"
         },
         {

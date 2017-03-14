@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Description of the API defined by the core-services project.",
   "title": "Core-Services API",
-  "url": "https://app.domain.com",
+  "url": "https://domain.com",
   "template": {
     "withCompare": true,
     "withGenerator": false
@@ -13,7 +13,7 @@
   "apidoc": "0.3.0",
   "generator": {
     "name": "apidoc",
-    "time": "2017-03-05T21:24:09.057Z",
+    "time": "2017-03-12T20:53:05.224Z",
     "url": "http://apidocjs.com",
     "version": "0.17.5"
   }
