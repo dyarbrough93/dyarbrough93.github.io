@@ -246,7 +246,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/events",
-    "title": "Read data of all events",
+    "title": "Read data of events",
     "version": "1.0.0",
     "name": "GetEvents",
     "group": "Events",
@@ -1052,7 +1052,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/groups",
-    "title": "Read data of all groups",
+    "title": "Read data of groups",
     "version": "1.0.0",
     "name": "GetGroups",
     "group": "Groups",
@@ -2169,7 +2169,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/users",
-    "title": "Read data of all users",
+    "title": "Read data of users",
     "version": "1.0.0",
     "name": "GetUsers",
     "group": "Users",
@@ -2365,7 +2365,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "api/apidocHistory.js",
+    "filename": "api/apidoc/apidocHistory.js",
     "groupTitle": "Users",
     "error": {
       "fields": {
